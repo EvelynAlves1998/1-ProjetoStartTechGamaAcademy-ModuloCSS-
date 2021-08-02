@@ -1,0 +1,213 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: whitesmoke;
+	font-family: 'Libre Baskerville', serif;
+}
+
+div img
+{
+	max-width:50px;
+	max-height:50px;
+	width: auto;
+	height: auto;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	box-shadow: 1px 1px 10px 1px whitesmoke;
+	bottom: 25px;
+	right: 162px;
+	width: auto;
+	height: auto;
+	background: rgba(255, 255, 255, 0.486);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 5px solid whitesmoke;
+
+}
+
+header h1
+{
+	
+	font-style: italic;
+}
+
+header ul
+{
+	display: flex;
+}
+
+header ul li
+{
+	padding: 5px;
+	display: flex;
+	font-size: 1em;
+}
+
+header ul li a:hover
+{
+	color:pink;
+	text-decoration: underline;
+}
+
+header ul li a
+{
+	transition: 300ms;
+}
+
+body
+{
+	background: url(img/back.jpeg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+ul
+{
+	list-style: none;
+	font-style: italic;
+}
+
+a
+{
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.container
+{
+	text-align: center;
+	font-size: 2em;
+}
+
+.container p
+{
+	text-align: center;
+	font-size: 20px;
+}
+
+.container .name h1 
+{
+	font-size: 60px;
+	margin-top: 30px;
+}
+
+.container .name h5
+{
+	font-size: 25px;
+}
+
+#arrow i
+{
+	font-size: 35px;
+	cursor: pointer;
+	animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink
+{
+	to {
+		visibility: hidden;
+	}
+}
+
+#animation
+{
+	transition: 300ms;
+}
+
+.rotate
+{
+	transform: rotate(180deg);
+	transition: 300ms;
+}
+
+.active
+{
+	display: block !important;
+}
+
+#about p
+{
+	color: whitesmoke;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form
+{
+	margin-top: 30px;
+}
+
+
+.form input
+{
+	width: 30%;
+	padding: 5px 10px;
+	border-radius: 5px 0px 0px 5px;
+	border: none;
+	
+}
+
+::-webkit-input-placeholder 
+{
+	color: pink;
+	font-family: 'Libre Baskerville', serif;
+ }
+
+.form button 
+{
+	width: 15%;
+	padding: 5px 10px;
+	background: linear-gradient(to right, whitesmoke 50%, pink 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	color: whitesmoke;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	transition: all 300ms ease-out;
+	border-radius: 0px 5px 5px 0px;
+	margin-top: 20px;
+	margin-left: -6px;
+}
+
+.form button:hover
+{
+	background: left bottom;
+	color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.form
+	{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+	.container .name h1
+	{
+		font-size: 30px;
+	}
+
+	.container .name h5
+	{
+		font-size: 15px;
+	}
+
+	#about p
+	{
+		max-width: 80%;
+		text-align: justify;
+	}
+}
